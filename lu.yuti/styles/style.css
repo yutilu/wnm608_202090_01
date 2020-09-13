@@ -1,0 +1,162 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'roboto', 'helvertica', sans-serif, serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.clearfix{
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.page-header{
+	position: fixed;
+	right: 8px;
+	bottom: 8px;
+	z-index: 10;
+	border-radius: 4px;
+	border: 1px solid #feb8c6;
+	overflow: hidden;
+}
+
+.page-header a{
+	text-decoration: none;
+}
+
+.page-header .header-tab{
+	line-height: 50px;
+	color: #feb8c6;
+	padding: 0 16px;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: right;
+	background-color: #fff;
+}
+
+.header-tab:hover{
+	transition: 0.3s all;
+	text-decoration: underline;
+	background-color: #feb8c6;
+	color: #ffffff;
+}
+
+.title-box{
+	width: 100%;
+	height: 80px;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 28pt;
+	color: pink;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.position-block{
+	width: 100%;
+	padding: 60px;
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.rectangle{
+	padding: 60px 30px;
+	width: 100%;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.recipe{
+	float: left;
+	width: 33.3333%;
+	text-align: center;
+}
+
+.recipe img{
+	height: 160px;
+	width: 160px;
+	border-radius: 80px;
+	object-fit: cover;
+}
+
+.recipe .recipe-title{
+	margin-top: 24px;
+	font-size: 24px;
+	font-weight: 300;
+	color: #424242;
+}
+
+.recipe .btn-detail{
+	margin-top: 16px;
+	padding: 6px 16px;
+	border-radius: 4px;
+	color: #fd6d89;
+	border: 1px solid #feb8c6;
+	display: inline-block;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-sizing: 
+}
+
+.recipe .btn-detail:hover{
+	background-color: #fff;
+	transition: all 0.3s;
+}
+
+.recipe-detail-block{
+	padding: 60px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-top: 60px;
+	border-top: 2px solid #feb8c6;
+}
+
+.recipe-detail{
+	padding: 30px 0;
+}
+
+.recipe-detail-title{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 16px;
+	color: #feb8c6;
+}
+
+.recipe-detail-content{
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 28px;
+	color: #424242;
+}
+
+.recipe-detail-content .subtitle{
+	margin-top: 24px;
+	margin-bottom: 12px;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
