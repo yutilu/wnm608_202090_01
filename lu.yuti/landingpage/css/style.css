@@ -28,7 +28,7 @@ html, body{
 	height: 500px;
 	position: relative;
 	opacity: 0.8;
-	background: url("../img/sea.jpg");
+	background-image: url("../img/sea.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
