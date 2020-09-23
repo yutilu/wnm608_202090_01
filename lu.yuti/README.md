@@ -9,4 +9,4 @@
 
 - http://yutilu.com/aau/wnm608/lu.yuti/recipes/index.html
 
-- - http://yutilu.com/aau/wnm608/lu.yuti/landingpage/index.html
+- http://yutilu.com/aau/wnm608/lu.yuti/landingpage/index.html
