@@ -3,3 +3,11 @@
 	--color-neutral-medium:#999;
 	--color-neutral-dark:#444;
 }
+
+
+--color-main-light: #17a6e2;
+
+body{
+	font-family: sans-serif;
+	
+}
