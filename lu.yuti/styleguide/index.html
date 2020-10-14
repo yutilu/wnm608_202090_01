@@ -24,6 +24,11 @@
          <ul>
             <li><a href="#color-pallete">Color Palette</a></li>
             <li><a href="#typography">Typography</a></li>
+            <ul>
+               <li><a href="#typo-heading">Heading</a></li>
+               <li><a href="#typo-font">Font</a></li>
+               <li><a href="#typo-paragraphs">Paragraphs</a></li>
+            </ul>
             <li><a href="#grid">Grid</a></li>
             <ul>
                <li><a href="#basic-grid">Basic Grid</a></li>
@@ -33,6 +38,15 @@
             <li><a href="#card">Card</a></li>
             <li><a href="#view-window">View Windows</a></li>
             <li><a href="#navigations">Navigations</a></li>
+            <ul>
+               <li><a href="#nav-basic">Basic Nav</a></li>
+               <li><a href="#nav-flex">Flex Nav</a></li>
+               <li><a href="#nav-stretch">Stretch Nav</a></li>
+               <li><a href="#nav-pills">Pills Nav</a></li>
+               <li><a href="#nav-breadcrumb">Breadcrumb Nav</a></li>
+               <li><a href="#nav-store">Store Nav</a></li>
+               <li><a href="#nav-store-breadcrumb">Store Breadcrumb Nav</a></li>
+            </ul>
             <li><a href="#tables">Tables</a></li>
             <li><a href="#forms">Forms</a></li>
             <li><a href="#products">Products</a></li>
@@ -120,7 +134,7 @@
          </code>
          
          <h4>Example</h4>
-         <div class="well">
+         <div class="well" id="typo-heading">
             <!-- h$*6{Heading $} -->
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -131,7 +145,7 @@
          </div>
 
          <h4>Font</h4>
-         <div class="well">
+         <div class="well" id="typo-font">
             <div class="card-block card-font-block">
             <div class="card-font-example card-font-example-1 clearfix">
                <div class="font-example-left">
@@ -168,7 +182,7 @@
          </div>
 
          <h3>Paragraphs</h3>
-         <div class="well">
+         <div class="well" id="typo-paragraphs">
             <!-- p*3>lorem50 -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est et accusantium commodi recusandae quaerat soluta autem atque, labore odio veniam, molestiae perferendis sunt eos, impedit quae molestias, rem optio amet nihil cupiditate. Laboriosam voluptatem veritatis blanditiis recusandae possimus! Porro quos tenetur magnam vero earum, alias quod obcaecati iusto, voluptate?</p>
             <p>Modi quasi expedita deleniti autem dicta at minus quo saepe ipsa, exercitationem fugit, molestiae explicabo. Eligendi excepturi in exercitationem officiis, facilis quisquam. Quod, eaque, cupiditate ex dolores quos saepe maxime, dolorem inventore esse perferendis, at dignissimos recusandae quis. Perspiciatis sed ipsa aperiam aspernatur ratione nostrum repellat voluptas ipsum, fugiat illum.</p>
@@ -358,10 +372,6 @@
 
       <div class="card rainbow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
 
-      <h3>Pink Card</h3>
-
-      <div class="card pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
-
       <h3>Yellow Card</h3>
 
       <div class="card yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
@@ -401,18 +411,9 @@
       }
       </script>
 
-      <div class="card soft">
+      <div class="card soft" id="nav-basic">
          <h3>Basic Nav</h3>
 
-         <!-- nav.nav>ul>li*4>a[href=#]{Link $} -->
-         <!-- <nav class="nav">
-            <ul>
-               <li><a href="#">Link 1</a></li>
-               <li><a href="#">Link 2</a></li>
-               <li><a href="#">Link 3</a></li>
-               <li><a href="#">Link 4</a></li>
-            </ul>
-         </nav> -->
          <div class="grid">
             <div class="col-xs-4">
                <script>makeNav('nav')</script>
@@ -423,27 +424,27 @@
          
       </div>
 
-      <div class="card soft">
+      <div class="card soft" id="nav-flex">
          <h3>Flex Nav</h3>
          <script>makeNav('nav flex')</script>
       </div>
 
-      <div class="card soft">
+      <div class="card soft" id="nav-stretch">
          <h3>Stretch Nav</h3>
          <script>makeNav('nav stretch')</script>
       </div>
 
-      <div class="card soft">
+      <div class="card soft" id="nav-pills">
          <h3>Pills Nav</h3>
          <script>makeNav('nav pills')</script>
       </div>
 
-      <div class="card soft">
+      <div class="card soft" id="nav-breadcrumb">
          <h3>Breadcrumb Nav</h3>
          <script>makeNav('nav crumbs')</script>
       </div>
 
-      <div class="card soft">
+      <div class="card soft" id="nav-store">
          <h3>Store Nav</h3>
          <div class="card-block card-nav-block">
             <div class="card-nav-inner-block clearfix">
@@ -454,7 +455,7 @@
             </div>
          </div>
       </div>
-      <div class="card soft">
+      <div class="card soft" id="nav-store-breadcrumb">
          <h3>Store Breadcrumb Nav</h3>
          <div class="card-breadcrumbs-nav-block">
             <a class="breadcrumbs-single-link">All</a>
@@ -588,7 +589,15 @@
             </div>
          </form>
 
-         <h3>Buttons</h3>
+         <h3>Button</h3>
+
+         <div class="form-control">
+            <button type="button" class="form-button form-button-color">Button</button>
+         </div>
+
+         <div class="form-control">
+            <input type="button" class="form-button" value="Button">
+         </div>
 
          <div class="form-control">
             <div class="btn-normal">ADD TO CART</div>
@@ -602,9 +611,11 @@
             </div>
          </div>
         
+
+
          <h3>Hotdog</h3>
        
-         <div class="hotdog">hotdog</div>
+         <div class="hotdog">Email</div>
 
          <form>
             <input type="search" class="hotdog dark">
@@ -753,28 +764,28 @@
                   <img src="../img/ORION.jpg" alt="">
                   <div class="product-title">Lorem Ipsum</div>
                   <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="product-price">$8.99</div>
+                  <div class="product-price">$2.99</div>
                   <div class="btn-shop-now">Shop now</div>
                </div>
                <div class="col-xs-3 product-card">
                   <img src="../img/ORION.jpg" alt="">
                   <div class="product-title">Lorem Ipsum</div>
                   <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="product-price">$8.99</div>
+                  <div class="product-price">$2.99</div>
                   <div class="btn-shop-now">Shop now</div>
                </div>
                <div class="col-xs-3 product-card">
                   <img src="../img/ORION.jpg" alt="">
                   <div class="product-title">Lorem Ipsum</div>
                   <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="product-price">$8.99</div>
+                  <div class="product-price">$2.99</div>
                   <div class="btn-shop-now">Shop now</div>
                </div>
                <div class="col-xs-3 product-card">
                   <img src="../img/ORION.jpg" alt="">
                   <div class="product-title">Lorem Ipsum</div>
                   <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <div class="product-price">$8.99</div>
+                  <div class="product-price">$2.99</div>
                   <div class="btn-shop-now">Shop now</div>
                </div>
             </div>
