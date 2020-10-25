@@ -1,6 +1,7 @@
 # Yuti Lu
 
 ## Important Links
+- http://yutilu.com/aau/wnm608/lu.yuti/styleguide/index.php
 
 - http://yutilu.com/aau/wnm608/lu.yuti/styleguide/index.html
 
