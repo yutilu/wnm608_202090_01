@@ -753,4 +753,49 @@ code {
 }
 
 
+/*user_admin page*/
+/*form style for update user*/
+.user_info_container > div{
+  margin-bottom: 10px;
+}
+
+.update_user_form,
+/*.user_info_container*/{
+  position: relative;
+  width: 400px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  box-shadow: 2px 4px 7px  #e3e3e3;
+}
+
+.update_user_form > label{
+  display: block;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.update_user_form > select,
+.update_user_form > input{
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border: 1px solid #eaeaea;
+}
+
+.update_user_form > button{
+  padding: 10px 15px;
+  background: var(--color-orange);
+  color: white;
+  font-weight:bold;
+  text-align: center;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.update_user_form > button:hover{
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 
