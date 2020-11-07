@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 06, 2020 at 07:04 PM
+-- Generation Time: Nov 06, 2020 at 07:18 PM
 -- Server version: 5.6.49-cll-lve
 -- PHP Version: 7.3.6
 
@@ -60,7 +60,8 @@ INSERT INTO `products` (`id`, `name`, `email`, `url`, `price`, `date_create`, `d
 (9, 'DAOXIANGCUN Mochi', '', '', 4.00, '2020-11-06 17:42:29', '2020-11-06 17:42:29', 'snack', 'img/dao_mochi_main.jpg', 'img/dao_mochi_1.jpg,img/dao_mochi_2.jpg', 'img/dao_mochi_thumb.jpg', 'DXC-Fruit Mochi Matcha Flavor 210g', 8.00),
 (10, 'MOUTHDOLEAK candy', '', '', 4.00, '2020-11-06 17:44:01', '2020-11-06 17:44:01', 'snack', 'img/Mou_candy_main.jpg', 'img/Mou_candy_1.jpg,img/Mou_candy_2.jpg', 'img/Mou_candy_thumb.jpg', 'MOUTHDOLEAK TAMARIND CANDY 160g', 4.00),
 (11, 'YUMEI Jujube Cake ', '', '', 3.50, '2020-11-06 17:47:39', '2020-11-06 17:47:39', 'snack', 'img/jujube_cake_main.jpg', 'img/jujube_cake_1.jpg,img/jujube_cake_2.jpg', 'img/jujube_cake_thumb.jpg', 'YUMEI Jujube Cake With Osmanthus 168g', 5.00),
-(12, 'Uncle Yu BBQ Flavored Scallops', '', '', 9.90, '2020-11-06 17:48:59', '2020-11-06 17:48:59', 'snack', 'img/uncle_scallops_main.jpg', 'img/uncle_scallops_1.jpg,img/uncle_scallops_2.jpg', 'img/uncle_scallops_thumb.jpg', 'Uncle Yu BBQ Flavored Scallops Snack with frozen scallops and oyster mushrooms,20pk 240g', 6.00);
+(12, 'Uncle Yu BBQ Flavored Scallops', '', '', 9.90, '2020-11-06 17:48:59', '2020-11-06 17:48:59', 'snack', 'img/uncle_scallops_main.jpg', 'img/uncle_scallops_1.jpg,img/uncle_scallops_2.jpg', 'img/uncle_scallops_thumb.jpg', 'Uncle Yu BBQ Flavored Scallops Snack with frozen scallops and oyster mushrooms,20pk 240g', 6.00),
+(13, 'CHUNG HSIANG Seaweed Crackers', '', '', 3.30, '2020-11-06 18:15:11', '2020-11-06 18:15:11', 'snack', 'img/chung_crackers_main.jpg', 'img/chung_crackers_1.jpg,img/chung_crackers_2.jpg', 'img/chung_crackers_thumb.jpg', 'CHUNG HSIANG Seaweed Crackers with Taiwan flavor style 140g', 4.00);
 
 --
 -- Indexes for dumped tables
@@ -80,7 +81,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
