@@ -8,6 +8,7 @@
          <ul class="display-flex">
             <li><a href="./index.php">HOME</a></li>
             <li><a href="./product_list.php">SNACKS</a></li>
+            <li><a href="./product_cart.php">CART</a></li>
          </ul>
       </nav>
    </div>

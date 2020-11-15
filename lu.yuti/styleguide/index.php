@@ -5,7 +5,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Home</title>
 
-   <?php include "../parts/meta.php"; ?>
+   <?php 
+   include_once "../parts/meta.php"; 
+   include_once "../php/function.php";
+   include_once "../parts/templates.php";
+   ?>
 </head>
 <body>
    
@@ -21,9 +25,24 @@
       <div class="basic card">
          <h2 class="popular_item_h2">POPULAR ITEMS</h2>
          <!--import popular items-->
+         <div class="container">
+            <div class="basic card">
+               <div class="form-control">
+                  <div class="product-list grid gap">
+                     <?php
+                        $pageItemCount = 4;
+                        echo array_reduce(
+                           MYSQLIQuery("SELECT * FROM products LIMIT $pageItemCount"),
+                           "makeProductList"
+                        );
+                     ?>
+                  </div>
+               </div>
+            </div>
+         </div>
          <?php 
-         $pageItemCount = 4;
-         include "../parts/popularItem.php";
+         //$pageItemCount = 4;
+         //include "../parts/popularItem.php";
          ?>
       </div>
    </div>
