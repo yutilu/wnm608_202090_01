@@ -1,3 +1,8 @@
+<?php
+include_once "../php/function.php";
+include_once "../parts/templates.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

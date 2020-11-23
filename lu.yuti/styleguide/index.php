@@ -1,3 +1,7 @@
+<?php
+include_once "../php/function.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

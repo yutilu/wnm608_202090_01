@@ -1,6 +1,7 @@
 <?php 
 include_once "../php/function.php";
 include_once "../parts/templates.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,14 +36,30 @@ include_once "../parts/templates.php";
            <p class="content">
               <?php echo $product->description;?>
            </p>
-           <div class="btn_container">
-              <a href="added_to_cart.php" class="btn-normal first_btn">Add to cart</a>
-              <div class="btn-count clearfix">
-                 <div class="btn-count-inner btn-count-minus">-</div>
-                 <div class="btn-count-inner btn-count-num">1</div>
-                 <div class="btn-count-inner btn-count-add">+</div>
-              </div>
-           </div>
+          <div class="form-control">
+            <label for="product-amount" class="form-label">Amount</label>
+            
+              <form method="post" action="product_actions.php?action=add-to-cart">
+                <input type="hidden" name="product-id" value="<?= $product->id ?>">
+                <div class="form-select">
+                  <select name="product-amount" id="product-amount">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                     <option value="6">6</option>
+                     <option value="7">7</option>
+                     <option value="8">8</option>
+                     <option value="9">9</option>
+                     <option value="10">10</option>
+                  </select>
+                </div>
+                <input type="submit" class="btn-normal first_btn" name="add_to_cart" value='Add to cart'>
+              </form>
+            
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -65,22 +82,7 @@ include_once "../parts/templates.php";
       </div>
    </div>
 
-   <!-- <div class="container">
-      <div class="basic card">
-      	<h2 class="product_detail_h2">PRODUCT ITEM</h2>
-      	<p class="product_detail_p">This is the product #<?= $_GET['id']; ?></p>
-     	<?php include "../parts/parts_product_single_item.php"; ?>
-
-     	<div class="a">
-     		<?php 
-     			//$item = ["","apple", "orange", "banana"];
-     			//echo "this is item " . $_GET['id'];
-     			//$count = $_GET['id'];
-     			//echo "product is: " . $item[$_GET['id']];
-     		?>
-     	</div>
-      </div>
-   </div> -->
+  
 
 	<?php include "../parts/footer.php"; ?>
   <script src="../js/product_item.js"></script>
