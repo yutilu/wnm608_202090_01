@@ -17,12 +17,14 @@ $cart_product = cartItemById($_GET['id']);
 
    <div class="container">
       <div class="card">
+         <img src="../img/cat.png" alt="" class="cat_img">
          <h2>Added <?= $product->name ?> To Cart</h2>
          <p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart.</P>
 
-         <a href="product_list.php">&#5176; Back to shopping</a>
+         
 
-         <div class="flex-none">
+         <div class="display-flex flex-space-between">
+            <a href="product_list.php">&#5176; Back to shopping</a>
             <a href="./product_cart.php" class="form-button">Check Cart</a>
          </div>
       </div>

@@ -17,8 +17,8 @@ include_once "../parts/templates.php";
    <div class="container">
       <div class="card card-confirmation-page">
          <div class="confirmation-page-content-block">
-             <div class="confirmation-page-title">Thank you for you order</div>
-            <div class="confirmation-page-subtitle">You will receive the confirmation shortly at your email.</div>
+            <p class="confirmation-page-title">Thank you for you order</p>
+            <p class="confirmation-page-subtitle">You will receive the confirmation shortly at your email.</p>
             <div class="confirmation-page-btn-goback">
                <a href="product_list.php">Back to shopping</a>
             </div> 

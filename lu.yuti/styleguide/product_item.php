@@ -18,8 +18,8 @@ include_once "../parts/templates.php";
   <div class="container">
     <div class="card">
       <a href="./product_list.php" class="product_list_back_btn">&#5176; Back to snacks list</a>
-      <div class="products_item_content">
-        <div class="img_content_container">
+      <div class="products_item_content grid gap">
+        <div class="img_content_container col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <img src="../<?php echo $product->image_main;?>" class="item_img item_img_main">
           <ul class="thum_img_container">
             <li class="thum_img_li">
@@ -30,7 +30,7 @@ include_once "../parts/templates.php";
             </li>
           </ul>
         </div>
-        <div class="content_container">
+        <div class="content_container col-lg-6 col-md-12 col-sm-12 col-xs-12">
            <p class="content_title"><?php echo $product->name;?></p>
            <p class="content_price"><?php echo $product->price;?></p>
            <p class="content">
