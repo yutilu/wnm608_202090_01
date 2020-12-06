@@ -120,6 +120,13 @@ if(isset($_GET['t'])) {
          </div>
       </div>
    </div>
+
+   <div class="container">
+      <div class="card">
+         <a href="/aau/wnm608/lu.yuti/admin/index.php">Product Admin</a>
+      </div>
+   </div>
+
    <script src="../js/products.js"></script>
    <?php include "../parts/footer.php"; ?>
 </body>

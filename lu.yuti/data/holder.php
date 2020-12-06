@@ -1,6 +1,3 @@
-<?php
-
-@include_once "../php/function.php";
 
 function getRequires($props) {
    foreach($props as $prop) {
@@ -10,7 +7,7 @@ function getRequires($props) {
 }
 
 
-function makeStatement($type, $params=[]) {
+function makeStatement($type) {
 
    switch($type) {
       case "products_all":
@@ -19,12 +16,12 @@ function makeStatement($type, $params=[]) {
             ORDER BY {$_GET['orderby']} {$_GET['orderby_direction']}
             LIMIT {$_GET['limit']}");
          break;
-
       case "products_admin_all":
          return MYSQLIQuery("SELECT *
             FROM `products`
             ORDER BY date_create DESC");
          break;
+
 
       case "product_by_id":
          if(!getRequires(['id'])) return
@@ -34,6 +31,7 @@ function makeStatement($type, $params=[]) {
             FROM `products`
             WHERE `id` = ".$_GET['id']);
          break;
+
 
       case "products_by_category":
          if(!getRequires(['category'])) return
@@ -47,6 +45,7 @@ function makeStatement($type, $params=[]) {
             LIMIT {$_GET['limit']}
             ");
          break;
+
 
       case "price_above":
          if(!getRequires(['price'])) return
@@ -72,6 +71,11 @@ function makeStatement($type, $params=[]) {
             ");
          break;
 
+
+
+
+
+
       case "search":
          if(!getRequires(['s'])) return
             ["error"=>"Missing Properties"];
@@ -84,6 +88,13 @@ function makeStatement($type, $params=[]) {
             ");
          break;
 
+
+
+
+
+
+
+
       case "product_insert":
          return MYSQLIQuery("INSERT INTO
             `products`
@@ -94,7 +105,7 @@ function makeStatement($type, $params=[]) {
                `description`,
                `quantity`,
                `image_main`,
-               `image_other`,
+               `image_tother`,
                `date_create`,
                `date_modify`
             )
@@ -113,10 +124,10 @@ function makeStatement($type, $params=[]) {
             ");
          break;
 
+
       case "product_update":
-         return MYSQLIQuery("
-            UPDATE
-               `products`
+         return MYSQLIQuery("UPDATE
+            `products`
             SET
                `name` = '{$params[0]}',
                `price` = '{$params[1]}',
@@ -130,10 +141,10 @@ function makeStatement($type, $params=[]) {
          break;
 
       case "product_delete":
-         return MYSQLIQuery("DELETE FROM
-            `products` WHERE `id` = {$params[0]}
-            ");
          break;
+
+   
+
 
       default: return ["error"=>"No Matched Type"];
    }

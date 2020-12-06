@@ -1,6 +1,8 @@
 <header class="navbar">
    <div class="container display-flex flex-align-center">
-      <div class="flex-none"><h1>YUM</h1></div>
+      <div class="flex-none">
+         <img src="../img/yumlogo.png" alt="nav logo" class="nav_logo">
+      </div>
       <div class="flex-stretch"></div>
       
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->

@@ -32,7 +32,7 @@ include_once "../parts/templates.php";
         </div>
         <div class="content_container col-lg-6 col-md-12 col-sm-12 col-xs-12">
            <p class="content_title"><?php echo $product->name;?></p>
-           <p class="content_price"><?php echo $product->price;?></p>
+           <p class="content_price"><?php echo '$'.$product->price;?></p>
            <p class="content">
               <?php echo $product->description;?>
            </p>
