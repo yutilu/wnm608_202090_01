@@ -39,9 +39,10 @@ function MYSQLIQuery($sql) {
    $result = $conn->query($sql);
    if($conn->errno) die($conn->error);
 
-   if($result->num_rows){
-      while($row = $result->fetch_object())
+   if(@$result->num_rows){
+      while($row = $result->fetch_object()){
          $a[] = $row;
+      }
    }
    
 

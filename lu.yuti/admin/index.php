@@ -38,7 +38,7 @@ switch(@$_GET['crud']) {
       ]);
 
       print_r($_GET["id"]);
-      //header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
+      header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
       break;
 
 
@@ -53,7 +53,7 @@ switch(@$_GET['crud']) {
          $_POST['product-image_main'],
          $_POST['product-image_other']
       ]);
-      //header("location:{$_SERVER['PHP_SELF']}?id=$id");
+      header("location:{$_SERVER['PHP_SELF']}?id=$id");
       break;
 
 
