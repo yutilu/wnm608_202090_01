@@ -53,7 +53,7 @@ switch(@$_GET['crud']) {
          $_POST['product-image_main'],
          $_POST['product-image_other']
       ]);
-      header("location:{$_SERVER['PHP_SELF']}?id=$id");
+      //header("location:{$_SERVER['PHP_SELF']}?id=$id");
       break;
 
 
@@ -77,6 +77,8 @@ $id = $_GET['id'];
 
 $thumbs = explode(",",$product->image_other);
 $main_elements = explode(",", $product->image_main);
+
+//print_r($thumbs);
 
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
