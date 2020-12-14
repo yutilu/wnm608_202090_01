@@ -26,6 +26,29 @@ include_once "../parts/templates.php";
       </div>
    </div>
 
+   <div class="container">
+      <div class="basic card">
+         <h2 class="popular_item_h2">POPULAR ITEMS</h2>
+         <!--import popular items-->
+         <div class="container">
+            <div class="basic card">
+               <div class="form-control">
+                  <div class="product-list grid gap">
+                     <?php
+                        $pageItemCount = 4;
+                        echo array_reduce(
+                           MYSQLIQuery("SELECT * FROM products LIMIT $pageItemCount"),
+                           "makeProductList"
+                        );
+                     ?>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
 	<?php include "../parts/footer.php"; ?>
 </body>
 </html>

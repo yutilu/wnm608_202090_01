@@ -26,6 +26,15 @@ include_once "../php/function.php";
       <!-- <h2>Product Name</h2> -->
    </div>
    <div class="container">
+
+      <div class="section-introduction card">
+         <div class="section-introduction-left"><img src="../img/chips.png" alt=""></div>
+         <div class="section-introduction-right">
+            <div class="section-introduction-right-1">Yum New Arrivals</div>
+            <div class="section-introduction-right-2">Limited Time 10% OFF.</div>
+         </div>
+      </div>
+
       <div class="basic card">
          <h2 class="popular_item_h2">POPULAR ITEMS</h2>
          <!--import popular items-->
@@ -50,6 +59,8 @@ include_once "../php/function.php";
          ?>
       </div>
    </div>
+
+
 
 
 
