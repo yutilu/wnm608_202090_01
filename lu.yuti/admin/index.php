@@ -7,7 +7,7 @@ include "../data/api.php";
 
 setDefault('orderby_direction','DESC');
 setDefault('orderby','date_create');
-setDefault('limit','12');
+setDefault('limit','20');
 $products = makeStatement("products_admin_all",[]);
 
 
@@ -228,6 +228,7 @@ HTML;
 
          ?>
          <div class="card medium soft">
+            
          <h2>Product List</h2>
 
          <div>
@@ -238,6 +239,7 @@ HTML;
          ?>
          </div>
          </div>
+      </div>
          <?php } ?>
    </div>
    
